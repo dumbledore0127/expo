@@ -12,3 +12,12 @@ web-build/
 
 # macOS
 .DS_Store
+
+# yarn not using Zero_installs
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions

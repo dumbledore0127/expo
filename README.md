@@ -17,3 +17,9 @@ bundle install
 ```
 yarn pod-install
 ```
+
+# start app on Expo Go
+
+```
+npx expo start
+```

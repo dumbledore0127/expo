@@ -24,6 +24,12 @@ yarn pod-install
 yarn format
 ```
 
+# lint
+
+```
+yarn lint
+```
+
 # start app on Expo Go
 
 ```

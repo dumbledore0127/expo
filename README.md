@@ -18,6 +18,12 @@ bundle install
 yarn pod-install
 ```
 
+# format
+
+```
+yarn format
+```
+
 # start app on Expo Go
 
 ```

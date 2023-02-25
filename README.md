@@ -18,19 +18,19 @@ bundle install
 yarn pod-install
 ```
 
-# format
+# Format
 
 ```
 yarn format
 ```
 
-# lint
+# Lint
 
 ```
 yarn lint
 ```
 
-# start app on Expo Go
+# Start app on Expo Go
 
 ```
 npx expo start

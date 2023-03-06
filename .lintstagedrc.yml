@@ -1,4 +1,4 @@
-'src/**':
+'*':
   - prettier --write ./
-'src/**/*.{js,jsx,ts,tsx}':
+'*.{js,jsx,ts,tsx}':
   - eslint ./

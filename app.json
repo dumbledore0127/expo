@@ -1,33 +1,33 @@
 {
   "expo": {
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#FFFFFF",
+        "foregroundImage": "./src/assets/adaptive-icon.png"
+      },
+      "package": "com.anonymous.exposample"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "icon": "./src/assets/icon.png",
+    "ios": {
+      "bundleIdentifier": "com.anonymous.exposample",
+      "supportsTablet": true
+    },
     "name": "expo-sample",
-    "slug": "expo-sample",
-    "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "slug": "expo-sample",
     "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#f6f6e9"
+      "backgroundColor": "#f6f6e9",
+      "image": "./src/assets/splash.png",
+      "resizeMode": "contain"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": ["**/*"],
-    "ios": {
-      "supportsTablet": true,
-      "bundleIdentifier": "com.anonymous.exposample"
-    },
-    "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
-      },
-      "package": "com.anonymous.exposample"
-    },
+    "userInterfaceStyle": "light",
+    "version": "1.0.0",
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./src/assets/favicon.png"
     }
   }
 }

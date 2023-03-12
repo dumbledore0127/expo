@@ -3,7 +3,7 @@ import { HomeScreen } from './HomeScreen';
 
 const Stack = createNativeStackNavigator();
 
-export const AppRoutes = () => {
+export const AppNavigators = () => {
   return (
     <Stack.Navigator>
       <Stack.Screen name='Home' component={HomeScreen} />

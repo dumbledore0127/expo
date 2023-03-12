@@ -1,9 +1,9 @@
 import { NavigationContainer } from '@react-navigation/native';
-import { AppRoutes } from './navigators';
+import { AppNavigators } from './navigators';
 
 const App = () => (
   <NavigationContainer>
-    <AppRoutes />
+    <AppNavigators />
   </NavigationContainer>
 );
 

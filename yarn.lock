@@ -6785,6 +6785,7 @@ __metadata:
     expo: ~47.0.12
     expo-splash-screen: ~0.17.5
     expo-status-bar: ~1.4.2
+    git-cz: ^4.9.0
     husky: ^8.0.3
     lint-staged: ^13.1.2
     prettier: 2.8.4
@@ -7595,6 +7596,16 @@ __metadata:
   version: 1.0.0
   resolution: "getenv@npm:1.0.0"
   checksum: 19ae5cad603a1cf1bcb8fa3bed48e00d062eb0572a4404c02334b67f3b3499f238383082b064bb42515e9e25c2b08aef1a3e3d2b6852347721aa8b174825bd56
+  languageName: node
+  linkType: hard
+
+"git-cz@npm:^4.9.0":
+  version: 4.9.0
+  resolution: "git-cz@npm:4.9.0"
+  bin:
+    git-cz: bin/git-cz.js
+    gitcz: bin/git-cz.js
+  checksum: c2f1f5b4d77f27fb3bc3edc7ac998f7ae822c5dc843e9f23929fab229fa7469a9023da35a767274559940dc140aafb92123195ea56aa2b732783807278156688
   languageName: node
   linkType: hard
 

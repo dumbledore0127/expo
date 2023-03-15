@@ -7,7 +7,8 @@
     "web": "expo start --web",
     "format": "prettier --write 'src/**'",
     "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
-    "postinstall": "husky install"
+    "postinstall": "husky install",
+    "commit": "yarn git-cz"
   },
   "dependencies": {
     "@expo/webpack-config": "^0.17.2",
@@ -30,6 +31,7 @@
     "@types/react-native": "~0.70.6",
     "eslint": "^8.34.0",
     "eslint-config-prettier": "^8.6.0",
+    "git-cz": "^4.9.0",
     "husky": "^8.0.3",
     "lint-staged": "^13.1.2",
     "prettier": "2.8.4",

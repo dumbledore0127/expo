@@ -30,3 +30,5 @@ android/
 .prettierignore
 
 yarn.lock
+
+.husky/

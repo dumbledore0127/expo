@@ -2,16 +2,16 @@ import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import { RootStackParamList } from '.';
+import { UserStackParamList } from '.';
 
-export type HomeScreenParams = { useId: string };
+export type UserScreenParams = { userId: string };
 
-type HomeScreenProps = NativeStackScreenProps<RootStackParamList, 'Home'>;
+type UserScreenProps = NativeStackScreenProps<UserStackParamList, 'User'>;
 
-export const HomeScreen: React.FC<HomeScreenProps> = ({ route }) => (
+export const UserScreen: React.FC<UserScreenProps> = ({ route }) => (
   <View style={styles.container}>
-    <Text>Home Screen</Text>
-    <Text>{route.params.useId}</Text>
+    <Text>User Screen</Text>
+    <Text>{route.params.userId}</Text>
     <StatusBar style='auto' />
   </View>
 );

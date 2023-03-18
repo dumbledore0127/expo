@@ -1,8 +1,11 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { HomeScreenParams } from '../../../navigators/HomeScreen';
+import { UserScreenParams } from '../../user/navigators/UserScreen';
 import { LoginScreen } from './LoginScreen';
 
-export type AuthStackParamList = { Login: undefined; Home: HomeScreenParams };
+export type AuthStackParamList = {
+  Login: undefined;
+  UserNavigators: { screen: 'User'; params: UserScreenParams };
+};
 
 const Stack = createNativeStackNavigator<AuthStackParamList>();
 

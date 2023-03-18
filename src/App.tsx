@@ -1,10 +1,10 @@
 import { NavigationContainer } from '@react-navigation/native';
 import React from 'react';
-import { AppNavigators } from './navigators';
+import { AppNavigator } from './navigators';
 
 const App: React.FC = () => (
   <NavigationContainer>
-    <AppNavigators />
+    <AppNavigator />
   </NavigationContainer>
 );
 

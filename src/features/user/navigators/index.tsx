@@ -5,7 +5,7 @@ export type UserStackParamList = { User: UserScreenParams };
 
 const Stack = createNativeStackNavigator<UserStackParamList>();
 
-export const UserNavigators: React.FC = () => (
+export const UserNavigator: React.FC = () => (
   <Stack.Navigator>
     <Stack.Screen name='User' component={UserScreen} />
   </Stack.Navigator>

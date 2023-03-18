@@ -1,18 +1,18 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import React from 'react';
-import { AuthNavigators } from '../features/auth';
-import { UserNavigators } from '../features/user';
+import { AuthNavigator } from '../features/auth';
+import { UserNavigator } from '../features/user';
 
 export type RootStackParamList = {
-  AuthNavigators: undefined;
-  UserNavigators: undefined;
+  AuthNavigator: undefined;
+  UserNavigator: undefined;
 };
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
-export const AppNavigators: React.FC = () => (
+export const AppNavigator: React.FC = () => (
   <Stack.Navigator>
-    <Stack.Screen name='AuthNavigators' component={AuthNavigators} />
-    <Stack.Screen name='UserNavigators' component={UserNavigators} />
+    <Stack.Screen name='AuthNavigator' component={AuthNavigator} />
+    <Stack.Screen name='UserNavigator' component={UserNavigator} />
   </Stack.Navigator>
 );

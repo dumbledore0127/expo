@@ -4,12 +4,12 @@ import { LoginScreen } from './LoginScreen';
 
 export type AuthStackParamList = {
   Login: undefined;
-  UserNavigators: { screen: 'User'; params: UserScreenParams };
+  UserNavigator: { screen: 'User'; params: UserScreenParams };
 };
 
 const Stack = createNativeStackNavigator<AuthStackParamList>();
 
-export const AuthNavigators: React.FC = () => (
+export const AuthNavigator: React.FC = () => (
   <Stack.Navigator>
     <Stack.Screen name='Login' component={LoginScreen} />
   </Stack.Navigator>

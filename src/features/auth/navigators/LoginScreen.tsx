@@ -9,7 +9,7 @@ export const LoginScreen: React.FC<LoginScreenProps> = ({ navigation }) => (
     <Button
       title='Login'
       onPress={() =>
-        navigation.navigate('UserNavigators', {
+        navigation.navigate('UserNavigator', {
           screen: 'User',
           params: { userId: 'passed-user-id' },
         })

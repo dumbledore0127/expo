@@ -1,5 +1,5 @@
+import { UserScreenParams } from '@/features/user/navigators/UserScreen';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { UserScreenParams } from '../../user/navigators/UserScreen';
 import { LoginScreen } from './LoginScreen';
 
 export type AuthStackParamList = {

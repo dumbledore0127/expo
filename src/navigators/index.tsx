@@ -1,7 +1,7 @@
+import { AuthNavigator } from '@/features/auth';
+import { UserNavigator } from '@/features/user';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import React from 'react';
-import { AuthNavigator } from '../features/auth';
-import { UserNavigator } from '../features/user';
 
 export type RootStackParamList = {
   AuthNavigator: undefined;

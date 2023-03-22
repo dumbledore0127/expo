@@ -1,4 +1,4 @@
-import React, { createContext, useContext } from 'react';
+import React, { createContext } from 'react';
 import { StyleSheet } from 'react-native';
 
 const AppStyles = StyleSheet.create({
@@ -14,7 +14,7 @@ type AppStylesContextType = {
   styles: typeof AppStyles;
 };
 
-const AppStylesContext = createContext<AppStylesContextType>({
+export const AppStylesContext = createContext<AppStylesContextType>({
   styles: AppStyles,
 });
 
@@ -27,8 +27,3 @@ export const AppStylesProvider: React.FC<AppStylesProviderProps> = ({
     {children}
   </AppStylesContext.Provider>
 );
-
-export const useAppStyles = () => {
-  const { styles } = useContext(AppStylesContext);
-  return styles;
-};

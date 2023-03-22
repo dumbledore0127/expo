@@ -1,7 +1,7 @@
-import { useAppStyles } from '@/providers/AppStyleProvider';
+import { AppStylesContext } from '@/providers/AppStylesProvider';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { StatusBar } from 'expo-status-bar';
-import React from 'react';
+import React, { useContext } from 'react';
 import { Text, View } from 'react-native';
 import { UserStackParamList } from '.';
 
@@ -10,9 +10,9 @@ export type UserScreenParams = { userId: string };
 type UserScreenProps = NativeStackScreenProps<UserStackParamList, 'User'>;
 
 export const UserScreen: React.FC<UserScreenProps> = ({ route }) => {
-  const appStyles = useAppStyles();
+  const { styles } = useContext(AppStylesContext);
   return (
-    <View style={appStyles.container}>
+    <View style={styles.container}>
       <Text>User Screen</Text>
       <Text>{route.params.userId}</Text>
       <StatusBar style='auto' />

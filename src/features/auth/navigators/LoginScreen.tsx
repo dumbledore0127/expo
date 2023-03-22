@@ -1,14 +1,15 @@
-import { useAppStyles } from '@/providers/AppStyleProvider';
+import { AppStylesContext } from '@/providers/AppStylesProvider';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
+import { useContext } from 'react';
 import { View, Button } from 'react-native';
 import { AuthStackParamList } from '.';
 
 type LoginScreenProps = NativeStackScreenProps<AuthStackParamList, 'Login'>;
 
 export const LoginScreen: React.FC<LoginScreenProps> = ({ navigation }) => {
-  const appStyles = useAppStyles();
+  const { styles } = useContext(AppStylesContext);
   return (
-    <View style={appStyles.container}>
+    <View style={styles.container}>
       <Button
         title='Login'
         onPress={() =>

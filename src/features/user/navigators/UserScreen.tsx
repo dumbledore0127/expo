@@ -1,4 +1,4 @@
-import { AppStylesContext } from '@/providers/AppStylesProvider';
+import { AppStylesContext } from '@/providers';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { StatusBar } from 'expo-status-bar';
 import React, { useContext } from 'react';

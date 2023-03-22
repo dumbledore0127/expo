@@ -1,4 +1,4 @@
-import { AppStylesContext } from '@/providers/AppStylesProvider';
+import { AppStylesContext } from '@/providers';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { useContext } from 'react';
 import { View, Button } from 'react-native';

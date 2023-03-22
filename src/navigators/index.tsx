@@ -1,12 +1,18 @@
+import { AuthNavigator } from '@/features/auth';
+import { UserNavigator } from '@/features/user';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { HomeScreen } from './HomeScreen';
+import React from 'react';
 
-const Stack = createNativeStackNavigator();
-
-export const AppNavigators = () => {
-  return (
-    <Stack.Navigator>
-      <Stack.Screen name='Home' component={HomeScreen} />
-    </Stack.Navigator>
-  );
+export type RootStackParamList = {
+  AuthNavigator: undefined;
+  UserNavigator: undefined;
 };
+
+const Stack = createNativeStackNavigator<RootStackParamList>();
+
+export const AppNavigator: React.FC = () => (
+  <Stack.Navigator>
+    <Stack.Screen name='AuthNavigator' component={AuthNavigator} />
+    <Stack.Screen name='UserNavigator' component={UserNavigator} />
+  </Stack.Navigator>
+);

@@ -1,9 +1,13 @@
 import { NavigationContainer } from '@react-navigation/native';
-import { AppNavigators } from './navigators';
+import React from 'react';
+import { AppNavigator } from './navigators';
+import { AppStylesProvider } from './providers';
 
-const App = () => (
+const App: React.FC = () => (
   <NavigationContainer>
-    <AppNavigators />
+    <AppStylesProvider>
+      <AppNavigator />
+    </AppStylesProvider>
   </NavigationContainer>
 );
 
